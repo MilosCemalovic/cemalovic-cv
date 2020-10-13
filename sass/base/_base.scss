@@ -1,0 +1,40 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+
+  @media only screen and (max-width:$bp-2) {
+    font-size: 50%;
+  }
+}
+
+body {
+  font-family: $font-primary;
+  font-weight: 400;
+  color: $color-primary;
+  font-size: $fz-1;
+  line-height: $lh-2;
+  display: grid;
+  
+  grid-template-rows: 4rem calc(100vh - 4rem) repeat(5, min-content);
+  
+  grid-template-columns: [nav-start] 30rem [nav-end full-start] minmax(5rem, 1fr) [center-start] repeat(4, [col-start] minmax(min-content, 30rem) [col-end]) [center-end] minmax(5rem, 1fr) [full-end];
+  overflow-x: hidden;
+
+  @media only screen and (max-width:$bp-5) {
+    grid-template-columns:[full-start] minmax(2rem, 1fr) [center-start] repeat(4, [col-start] minmax(min-content, 30rem) [col-end]) [center-end] minmax(2rem, 1fr) [full-end];
+    grid-template-rows: 7rem calc(100vh - 7rem) repeat(5, min-content);
+  }
+}
+
+::selection {
+  background-color: $color-primary;
+  color: $color-grey-light-1;
+}

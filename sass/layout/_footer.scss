@@ -1,0 +1,19 @@
+.footer {
+  grid-column: full-start / full-end;
+  background-color: $color-grey-light-2;  
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, min-content);
+  justify-content: space-between;
+  padding: 5rem;
+
+  &__text {
+    font-size: 1.2rem;
+    color: $color-grey-light-1;
+    display: none;
+
+    @media only screen and (max-width:$bp-5) {
+      display: block;
+    }
+  }
+}

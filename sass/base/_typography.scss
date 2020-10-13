@@ -1,0 +1,135 @@
+%heading {
+  font-family: $font-secondary;
+  text-transform: uppercase;
+  letter-spacing: $ls-3;
+}
+
+.heading-1 {
+  @extend %heading;
+  font-size: $fz-3;
+  color: $color-grey-dark-1;
+
+  &__link:link,
+  &__link:visited {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  // @media only screen and (max-width:$bp-5) {
+  //   font-size: $fz-1;
+  // }
+
+  // @media only screen and (max-width:$bp-6) {
+  //   font-size: 1rem;
+  //   letter-spacing: $ls-2;
+  // }
+}
+
+.heading-3 {
+  @extend %heading;
+
+  color: $color-white;
+  animation: moveInRight 2s;
+  display: grid;
+  text-transform: unset;
+
+  &-span {
+    &--1 {
+      font-size: 6rem;
+    }
+    
+    &--2 {
+      font-size: 3rem;
+
+      @media only screen and (max-width:$bp-5) {
+        font-size: $fz-3;
+      }
+    }
+  }
+
+//   @media only screen and (max-width:$bp-5) {
+//     font-size: 4.5rem;
+//   }
+
+//   @media only screen and (max-width:$bp-6) {
+//     font-size: 3rem;
+//   }
+}
+
+.heading-4 {
+  @extend %heading;
+  line-height: $lh-1;
+  font-size: 2.5rem;
+  letter-spacing: $ls-2;
+  color: $color-grey-light-1;
+  font-weight: $fw-9;
+
+  @media only screen and (max-width: $bp-6) {
+    justify-self: center;
+    // font-size: $fz-3;
+  }
+
+  &--about,  
+  &--skills,
+  &--hobbies,
+  &--footer {
+    grid-column: 1 / -1;
+  }
+
+  &--skills{
+    // color: $color-grey-dark-1;
+    margin-bottom: 3rem;
+    text-shadow: $txsw-3;
+  }
+ 
+  &--footer {
+    justify-self: center;
+    text-shadow: $txsw-3;
+
+    @media only screen and (max-width:$bp-5) {
+      margin-bottom: 5rem;
+    }
+  }
+
+  &--hobbies {
+    color: $color-grey-dark-1;
+  }
+
+//   @media only screen and (max-width:$bp-5) {
+//     font-size: 2.5rem;
+//     text-align: center;
+//     line-height: $lh-2;
+//   }
+
+//   @media only screen and (max-width:$bp-6) {
+//     font-size: 2.2rem;
+//   }
+
+}
+
+.heading-5 {
+  @extend %heading;
+  line-height: $lh-1;
+  letter-spacing: $ls-1;
+
+  &--about {
+    font-size: $fz-3;
+    color: $color-blue-light;
+    text-transform: unset;
+    grid-column: 2 / 3;
+    margin-left: -2rem;
+  }
+}
+
+.par {
+  
+  line-height: $lh-2;
+  letter-spacing: $ls-2;
+  font-size: 1.6rem;
+  color: $color-grey-dark-1;
+
+  &--about {
+    text-align: justify;
+    grid-column: 1 / -1;
+  }
+}

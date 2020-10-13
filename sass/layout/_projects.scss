@@ -1,0 +1,11 @@
+.projects {
+  grid-column: full-start / full-end;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+  gap: 5rem;
+  
+  &__img {
+    display: block;
+    width: 100%;
+  }
+}

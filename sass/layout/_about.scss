@@ -1,0 +1,48 @@
+.about {
+  grid-column: center-start / center-end;
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+  gap: 5rem;  
+  align-items: start;
+  background-color: $color-orange-light;
+  margin: 5rem 0;
+
+  &-box {
+    display: grid;
+    grid-template-columns: min-content 1fr;
+    grid-template-rows: repeat(2, min-content);
+    row-gap: 2rem;
+    justify-items: center;
+    align-items: start;
+    background-color: $color-grey-light-1;
+    color: $color-white;
+    // box-shadow: $bxsw-1;
+    padding: 5rem 2rem;
+    height: 30rem;
+
+    // @media only screen and (max-width: $bp-5) {
+    //   transform: translateY(-1rem);
+    // }
+
+    @media only screen and (max-width: $bp-6) {
+      height: max-content;
+    }
+  }
+
+  &__icon {
+    width: 4rem;
+    height: 4rem;
+    padding: .7rem;
+    background-color: $color-orange-light;
+    border-radius: 50%;
+    fill: $color-grey-light-1;
+    grid-row: 1 / 2;
+    transform: translateY(-4rem);
+
+    @media only screen and (max-width: $bp-5) {
+      transform: translateY(-1rem);
+    }
+  }
+
+}
