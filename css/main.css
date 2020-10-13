@@ -634,6 +634,12 @@ body {
   padding: 5rem;
 }
 
+@media only screen and (max-width: 51.5em) {
+  .footer {
+    padding: 2rem;
+  }
+}
+
 .footer__text {
   font-size: 1.2rem;
   color: #f9f9f9;
@@ -643,6 +649,7 @@ body {
 @media only screen and (max-width: 51.5em) {
   .footer__text {
     display: block;
+    font-size: 1rem;
   }
 }
 
