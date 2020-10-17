@@ -281,13 +281,17 @@ body {
   }
 }
 
-.heading-4--about, .heading-4--skills, .heading-4--hobbies, .heading-4--footer {
+.heading-4--about, .heading-4--skills, .heading-4--projects, .heading-4--hobbies, .heading-4--footer {
   grid-column: 1 / -1;
 }
 
 .heading-4--skills {
   margin-bottom: 3rem;
   text-shadow: 0 0.1rem 0.15rem #666;
+}
+
+.heading-4--hobbies, .heading-4--projects {
+  color: #666;
 }
 
 .heading-4--footer {
@@ -299,10 +303,6 @@ body {
   .heading-4--footer {
     margin-bottom: 5rem;
   }
-}
-
-.heading-4--hobbies {
-  color: #666;
 }
 
 .heading-5 {
@@ -622,6 +622,10 @@ body {
 .projects__img {
   display: block;
   width: 100%;
+}
+
+.projects__link-img--php {
+  grid-column: 1 / -1;
 }
 
 .footer {

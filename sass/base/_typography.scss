@@ -71,6 +71,7 @@
 
   &--about,  
   &--skills,
+  &--projects,
   &--hobbies,
   &--footer {
     grid-column: 1 / -1;
@@ -81,6 +82,11 @@
     margin-bottom: 3rem;
     text-shadow: $txsw-3;
   }
+
+  &--hobbies,
+  &--projects {
+    color: $color-grey-dark-1;
+  }
  
   &--footer {
     justify-self: center;
@@ -89,10 +95,6 @@
     @media only screen and (max-width:$bp-5) {
       margin-bottom: 5rem;
     }
-  }
-
-  &--hobbies {
-    color: $color-grey-dark-1;
   }
 
 //   @media only screen and (max-width:$bp-5) {

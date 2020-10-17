@@ -1,2 +1,19 @@
 # cemalovic-cv
-This is my Portfolio Website. It contains Advance CSS, BEM Architecture, SASS, CSS Grid, CSS Flexbox, CSS animatios, Background video, SVG icons, Smooth Scroll and HTML5.
+This is my Portfolio Website. It contains:
+
+- SASS
+- Advance CSS
+- CSS Grid
+- CSS Flexbox
+- HTML5
+- PHP
+
+using:
+- BEM Architecture (Block, Element, Modifier)
+- DRY Methodology (Don't Repeat Yourslef)
+- Clean & Reusable code
+- SVG / sprite.svg
+- Intersection Observer
+- Smooth Scroll
+- Object Oriented Programming
+- MVC Architecture
