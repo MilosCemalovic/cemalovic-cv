@@ -13,11 +13,6 @@
   &__cv {
     width: 2rem;
     height: 2rem;
-
-    @media only screen and (max-width:$bp-5) {
-      width: 1.7rem;
-      height: 1.7rem;
-    }
   }
 
   &__cv {
@@ -28,10 +23,6 @@
     font-size: .9rem;
     @include grid-center-1;
     font-weight: $fw-9;
-
-    @media only screen and (max-width:$bp-5) {
-      font-size: .7rem;
-    }
   }
 
   &__footer {

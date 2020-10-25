@@ -285,12 +285,7 @@ body {
   grid-column: 1 / -1;
 }
 
-.heading-4--skills {
-  margin-bottom: 3rem;
-  text-shadow: 0 0.1rem 0.15rem #666;
-}
-
-.heading-4--hobbies, .heading-4--projects {
+.heading-4--hobbies, .heading-4--projects, .heading-4--skills {
   color: #666;
 }
 
@@ -376,6 +371,22 @@ body {
 
 .mlr-sm {
   margin: 0 1rem;
+}
+
+.m-lg {
+  margin: 5rem;
+}
+
+.m-md {
+  margin: 2rem;
+}
+
+.m-sm {
+  margin: 1rem;
+}
+
+.mtlr-lg {
+  margin: 5rem 5rem 0 5rem;
 }
 
 .btn, .btn:link, .btn:visited {
@@ -512,13 +523,6 @@ body {
   height: 2rem;
 }
 
-@media only screen and (max-width: 51.5em) {
-  .social__icon, .social__cv {
-    width: 1.7rem;
-    height: 1.7rem;
-  }
-}
-
 .social__cv {
   background-color: #000;
   text-decoration: none;
@@ -529,12 +533,6 @@ body {
   align-items: center;
   justify-content: center;
   font-weight: 900;
-}
-
-@media only screen and (max-width: 51.5em) {
-  .social__cv {
-    font-size: .7rem;
-  }
 }
 
 .social__footer {
@@ -653,7 +651,6 @@ body {
 @media only screen and (max-width: 51.5em) {
   .footer__text {
     display: block;
-    font-size: 1rem;
   }
 }
 
@@ -782,6 +779,13 @@ body {
   position: sticky;
   top: 1.5rem;
   z-index: 2000;
+  transition: all 0.2s;
+  cursor: pointer;
+  animation: moveInLeft-2 2s;
+}
+
+.navigation-box__link:hover, .navigation-box__link:active {
+  transform: translateY(-0.2rem);
 }
 
 .navigation-box__img {
@@ -815,6 +819,8 @@ body {
   row-gap: 1.5rem;
   position: sticky;
   top: 20rem;
+  animation: moveInLeft-2 2s 1s;
+  animation-fill-mode: backwards;
 }
 
 @media only screen and (max-width: 51.5em) {
@@ -823,6 +829,8 @@ body {
     column-gap: 2rem;
     top: 0;
     margin: 0;
+    animation: moveInTop 2s 1s;
+    animation-fill-mode: backwards;
   }
 }
 
@@ -891,20 +899,30 @@ body {
 
 .skills {
   grid-column: full-start / full-end;
-  padding: 5rem;
+  display: grid;
+}
+
+.skills__wrapper {
   position: relative;
   background-image: linear-gradient(to right, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6));
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
   align-items: start;
   gap: 3rem;
+  padding: 5rem 0;
 }
 
-.skills-box {
+.skills__box {
   display: grid;
   grid-template-columns: min-content max-content;
   gap: 3rem;
   margin-left: 5vw;
+}
+
+@media only screen and (max-width: 51.5em) {
+  .skills__box {
+    margin-left: 20%;
+  }
 }
 
 .skills__icon {

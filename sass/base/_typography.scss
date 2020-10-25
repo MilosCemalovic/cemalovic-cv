@@ -77,14 +77,9 @@
     grid-column: 1 / -1;
   }
 
-  &--skills{
-    // color: $color-grey-dark-1;
-    margin-bottom: 3rem;
-    text-shadow: $txsw-3;
-  }
-
   &--hobbies,
-  &--projects {
+  &--projects,
+  &--skills {
     color: $color-grey-dark-1;
   }
  

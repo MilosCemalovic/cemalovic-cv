@@ -1,19 +1,30 @@
 .skills {
   grid-column: full-start / full-end;
-  padding: 5rem;
-
-  position:relative; 
-  background-image: linear-gradient(to right, rgba($color-white, .6),  rgba($color-white, .6));
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
-  align-items: start;
-  gap: 3rem;
 
-  &-box {
+  &__wrapper {
+
+    position:relative; 
+    background-image: linear-gradient(to right, rgba($color-white, .6),  rgba($color-white, .6));
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+  
+    align-items: start;
+    gap: 3rem;
+    padding: 5rem 0;
+  
+  }
+
+  &__box {
     display: grid;
     grid-template-columns: min-content max-content;
     gap: 3rem;
     margin-left: 5vw;
+
+
+    @media only screen and (max-width: $bp-5) {
+      margin-left: 20%;
+    }
   }
 
   &__icon {

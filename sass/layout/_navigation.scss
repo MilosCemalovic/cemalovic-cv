@@ -34,6 +34,8 @@
     position: sticky;
     top: 1.5rem;
     z-index: 2000;
+    @include hover-active-1;
+    animation: moveInLeft-2 2s;
   }
 
   &__img {
@@ -64,12 +66,16 @@
   row-gap: 1.5rem;
   position: sticky;
   top: 20rem;
+  animation: moveInLeft-2 2s 1s;
+  animation-fill-mode: backwards;
 
   @media only screen and (max-width: $bp-5) {
     grid-template-columns: repeat(6, min-content);
     column-gap: 2rem;
     top: 0;
     margin: 0;
+    animation: moveInTop 2s 1s;
+    animation-fill-mode: backwards;
   }
 
   // @media only screen and (max-width: $bp-6) {
