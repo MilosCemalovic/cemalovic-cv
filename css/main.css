@@ -213,7 +213,7 @@ body {
   font-size: 1.4rem;
   line-height: 1.4;
   display: grid;
-  grid-template-rows: 4rem calc(100vh - 4rem) repeat(5, min-content);
+  grid-template-rows: 4rem calc(100vh - 4rem) repeat(7, min-content);
   grid-template-columns: [nav-start] 30rem [nav-end full-start] minmax(5rem, 1fr) [center-start] repeat(4, [col-start] minmax(min-content, 30rem) [col-end]) [center-end] minmax(5rem, 1fr) [full-end];
   overflow-x: hidden;
 }
@@ -221,7 +221,7 @@ body {
 @media only screen and (max-width: 51.5em) {
   body {
     grid-template-columns: [full-start] minmax(2rem, 1fr) [center-start] repeat(4, [col-start] minmax(min-content, 30rem) [col-end]) [center-end] minmax(2rem, 1fr) [full-end];
-    grid-template-rows: 7rem calc(100vh - 7rem) repeat(5, min-content);
+    grid-template-rows: 7rem calc(100vh - 7rem) repeat(7, min-content);
   }
 }
 
@@ -271,8 +271,9 @@ body {
   line-height: 1;
   font-size: 2.5rem;
   letter-spacing: 0.2rem;
-  color: #f9f9f9;
+  color: #666;
   font-weight: 900;
+  grid-column: 1 / -1;
 }
 
 @media only screen and (max-width: 40em) {
@@ -281,17 +282,12 @@ body {
   }
 }
 
-.heading-4--about, .heading-4--skills, .heading-4--projects, .heading-4--hobbies, .heading-4--footer {
-  grid-column: 1 / -1;
-}
-
-.heading-4--hobbies, .heading-4--projects, .heading-4--skills {
-  color: #666;
+.heading-4--about, .heading-4--footer {
+  color: #f9f9f9;
 }
 
 .heading-4--footer {
   justify-self: center;
-  text-shadow: 0 0.1rem 0.15rem #666;
 }
 
 @media only screen and (max-width: 51.5em) {
@@ -301,8 +297,9 @@ body {
 }
 
 .heading-5 {
-  line-height: 1;
+  line-height: 1.4;
   letter-spacing: 0.1rem;
+  text-align: center;
 }
 
 .heading-5--about {
@@ -318,11 +315,8 @@ body {
   letter-spacing: 0.2rem;
   font-size: 1.6rem;
   color: #666;
-}
-
-.par--about {
-  text-align: justify;
   grid-column: 1 / -1;
+  text-align: justify;
 }
 
 .mt-sm {
@@ -557,7 +551,7 @@ body {
   margin: 5rem 0;
 }
 
-.about-box {
+.about__box {
   display: grid;
   grid-template-columns: min-content 1fr;
   grid-template-rows: repeat(2, min-content);
@@ -571,7 +565,7 @@ body {
 }
 
 @media only screen and (max-width: 40em) {
-  .about-box {
+  .about__box {
     height: max-content;
   }
 }
@@ -604,10 +598,21 @@ body {
   overflow: hidden;
 }
 
-.bg-video__content {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+.experience {
+  grid-column: center-start / center-end;
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+  gap: 5rem;
+  align-items: start;
+}
+
+.experience__box {
+  display: grid;
+  grid-template-columns: min-content 1fr;
+  grid-template-rows: repeat(2, min-content);
+  gap: 2rem;
+  justify-items: center;
 }
 
 .projects {
@@ -711,7 +716,7 @@ body {
 .hobbies__icon {
   width: 10rem;
   height: 10rem;
-  fill: #f8931d;
+  fill: #fcb040;
 }
 
 @media only screen and (max-width: 51.5em) {
@@ -897,6 +902,12 @@ body {
   }
 }
 
+.objective {
+  grid-column: center-start / center-end;
+  display: grid;
+  gap: 2rem;
+}
+
 .skills {
   grid-column: full-start / full-end;
   display: grid;
@@ -904,7 +915,9 @@ body {
 
 .skills__wrapper {
   position: relative;
-  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6));
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url(../img/cemalovic-milos-protfolio-skills.gif);
+  background-size: cover;
+  background-position: center;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
   align-items: start;
@@ -958,14 +971,13 @@ body {
   fill: #f495c8;
 }
 
-.skills__icon--7 {
+.skills__icon--8 {
   fill: #777;
 }
 
 .skills__name {
   font-size: 3rem;
   color: #333;
-  text-shadow: 0.2rem 0.2rem 0.2rem #fff;
 }
 
 .top {

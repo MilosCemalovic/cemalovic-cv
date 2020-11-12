@@ -8,7 +8,7 @@
   background-color: $color-orange-light;
   margin: 5rem 0;
 
-  &-box {
+  &__box {
     display: grid;
     grid-template-columns: min-content 1fr;
     grid-template-rows: repeat(2, min-content);

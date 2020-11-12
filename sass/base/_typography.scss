@@ -15,14 +15,6 @@
     text-decoration: none;
   }
 
-  // @media only screen and (max-width:$bp-5) {
-  //   font-size: $fz-1;
-  // }
-
-  // @media only screen and (max-width:$bp-6) {
-  //   font-size: 1rem;
-  //   letter-spacing: $ls-2;
-  // }
 }
 
 .heading-3 {
@@ -34,6 +26,7 @@
   text-transform: unset;
 
   &-span {
+
     &--1 {
       font-size: 6rem;
     }
@@ -46,14 +39,6 @@
       }
     }
   }
-
-//   @media only screen and (max-width:$bp-5) {
-//     font-size: 4.5rem;
-//   }
-
-//   @media only screen and (max-width:$bp-6) {
-//     font-size: 3rem;
-//   }
 }
 
 .heading-4 {
@@ -61,53 +46,34 @@
   line-height: $lh-1;
   font-size: 2.5rem;
   letter-spacing: $ls-2;
-  color: $color-grey-light-1;
+  color: $color-grey-dark-1;
   font-weight: $fw-9;
+  grid-column: 1 / -1;
 
   @media only screen and (max-width: $bp-6) {
     justify-self: center;
-    // font-size: $fz-3;
   }
 
-  &--about,  
-  &--skills,
-  &--projects,
-  &--hobbies,
+  &--about,
   &--footer {
-    grid-column: 1 / -1;
-  }
-
-  &--hobbies,
-  &--projects,
-  &--skills {
-    color: $color-grey-dark-1;
+    color: $color-grey-light-1;
   }
  
   &--footer {
     justify-self: center;
-    text-shadow: $txsw-3;
 
     @media only screen and (max-width:$bp-5) {
       margin-bottom: 5rem;
     }
   }
 
-//   @media only screen and (max-width:$bp-5) {
-//     font-size: 2.5rem;
-//     text-align: center;
-//     line-height: $lh-2;
-//   }
-
-//   @media only screen and (max-width:$bp-6) {
-//     font-size: 2.2rem;
-//   }
-
 }
 
 .heading-5 {
   @extend %heading;
-  line-height: $lh-1;
+  line-height: $lh-2;
   letter-spacing: $ls-1;
+  text-align: center;
 
   &--about {
     font-size: $fz-3;
@@ -124,9 +90,6 @@
   letter-spacing: $ls-2;
   font-size: 1.6rem;
   color: $color-grey-dark-1;
-
-  &--about {
-    text-align: justify;
-    grid-column: 1 / -1;
-  }
+  grid-column: 1 / -1;
+  text-align: justify;
 }

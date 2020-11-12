@@ -1,0 +1,17 @@
+.experience {
+  grid-column: center-start / center-end;
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+  gap: 5rem;
+  align-items: start;
+
+  &__box {
+    display: grid;
+    grid-template-columns: min-content 1fr;
+    grid-template-rows: repeat(2, min-content);
+    gap: 2rem;
+    justify-items: center;
+  }
+
+}
