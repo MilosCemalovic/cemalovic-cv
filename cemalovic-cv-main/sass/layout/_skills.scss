@@ -1,0 +1,73 @@
+.skills {
+  grid-column: full-start / full-end;
+  display: grid;
+
+  &__wrapper {
+
+    position:relative; 
+    background-image: linear-gradient(to right, rgba($color-white, .8),  rgba($color-white, .8)), url(../img/cemalovic-milos-protfolio-skills.gif);
+    background-size: cover;
+    background-position: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+  
+    align-items: start;
+    gap: 3rem;
+    padding: 5rem 0;
+  
+  }
+
+  &__box {
+    display: grid;
+    grid-template-columns: min-content max-content;
+    gap: 3rem;
+    margin-left: 5vw;
+
+
+    @media only screen and (max-width: $bp-5) {
+      margin-left: 20%;
+    }
+  }
+
+  &__icon {
+    width: 4rem;
+    height: 4rem;
+
+    &--1 {
+      fill: $color-secondary;
+    }
+
+    &--2 {
+      fill: $color-pink-dark;
+    }
+
+    &--3 {
+      fill: $color-orange-light;
+    }
+
+    &--4 {
+      fill: $color-green-dark;
+    }
+
+    &--5 {
+      fill: $color-blue-dark-1;
+    }
+
+    &--6 {
+      fill: $color-brown-dark;
+    }
+
+    &--7 {
+      fill: $color-pink-light-2;
+    }
+
+    &--8 {
+      fill: $color-primary;
+    }
+  }
+
+  &__name {
+    font-size: 3rem;
+    color: $color-grey-dark-2;
+  }
+}
