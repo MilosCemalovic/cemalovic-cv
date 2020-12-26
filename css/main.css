@@ -288,6 +288,7 @@ body {
 
 .heading-4--footer {
   justify-self: center;
+  text-align: center;
 }
 
 @media only screen and (max-width: 51.5em) {
