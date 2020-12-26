@@ -577,7 +577,7 @@ body {
   }
 }
 
-@media only screen and (max-width: 51.75em) {
+@media only screen and (max-width: 51.5em) {
   .about__box {
     height: 30rem;
   }
