@@ -1,10 +1,14 @@
 .experience {
-  grid-column: center-start / center-end;
-  padding: 2rem;
+  grid-column: full-start / full-end;
+  padding: 5rem;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+  grid-template-columns: repeat(2, 1fr);
   gap: 5rem;
   align-items: start;
+
+  @media only screen and (max-width: $bp-6) {
+    grid-template-columns: 1fr;
+  }
 
   &__box {
     display: grid;

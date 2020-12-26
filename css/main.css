@@ -544,11 +544,17 @@ body {
   grid-column: center-start / center-end;
   padding: 2rem;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+  grid-template-columns: repeat(2, 1fr);
   gap: 5rem;
   align-items: start;
   background-color: #fcb040;
   margin: 5rem 0;
+}
+
+@media only screen and (max-width: 40em) {
+  .about {
+    grid-template-columns: 1fr;
+  }
 }
 
 .about__box {
@@ -562,6 +568,18 @@ body {
   color: #fff;
   padding: 5rem 2rem;
   height: 30rem;
+}
+
+@media only screen and (max-width: 58.75em) {
+  .about__box {
+    height: 37rem;
+  }
+}
+
+@media only screen and (max-width: 51.75em) {
+  .about__box {
+    height: 30rem;
+  }
 }
 
 @media only screen and (max-width: 40em) {
@@ -599,12 +617,18 @@ body {
 }
 
 .experience {
-  grid-column: center-start / center-end;
-  padding: 2rem;
+  grid-column: full-start / full-end;
+  padding: 5rem;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+  grid-template-columns: repeat(2, 1fr);
   gap: 5rem;
   align-items: start;
+}
+
+@media only screen and (max-width: 40em) {
+  .experience {
+    grid-template-columns: 1fr;
+  }
 }
 
 .experience__box {
@@ -618,8 +642,14 @@ body {
 .projects {
   grid-column: full-start / full-end;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+  grid-template-columns: repeat(2, 1fr);
   gap: 5rem;
+}
+
+@media only screen and (max-width: 40em) {
+  .projects {
+    grid-template-columns: 1fr;
+  }
 }
 
 .projects__img {
@@ -919,10 +949,16 @@ body {
   background-size: cover;
   background-position: center;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+  grid-template-columns: repeat(2, 1fr);
   align-items: start;
   gap: 3rem;
   padding: 5rem 0;
+}
+
+@media only screen and (max-width: 40em) {
+  .skills__wrapper {
+    grid-template-columns: 1fr;
+  }
 }
 
 .skills__box {

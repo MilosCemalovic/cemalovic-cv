@@ -2,11 +2,15 @@
   grid-column: center-start / center-end;
   padding: 2rem;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+  grid-template-columns: repeat(2, 1fr);
   gap: 5rem;  
   align-items: start;
   background-color: $color-orange-light;
   margin: 5rem 0;
+
+  @media only screen and (max-width: $bp-6) {
+    grid-template-columns: 1fr;
+  }
 
   &__box {
     display: grid;
@@ -21,9 +25,13 @@
     padding: 5rem 2rem;
     height: 30rem;
 
-    // @media only screen and (max-width: $bp-5) {
-    //   transform: translateY(-1rem);
-    // }
+    @media only screen and (max-width: $bp-3) {
+      height: 37rem;
+    }
+
+    @media only screen and (max-width: $bp-4) {
+      height: 30rem;
+    }
 
     @media only screen and (max-width: $bp-6) {
       height: max-content;
