@@ -552,7 +552,7 @@ body {
   margin: 5rem 0;
 }
 
-@media only screen and (max-width: 40em) {
+@media only screen and (max-width: 51.5em) {
   .about {
     grid-template-columns: 1fr;
   }
@@ -578,12 +578,6 @@ body {
 }
 
 @media only screen and (max-width: 51.5em) {
-  .about__box {
-    height: 30rem;
-  }
-}
-
-@media only screen and (max-width: 40em) {
   .about__box {
     height: max-content;
   }
