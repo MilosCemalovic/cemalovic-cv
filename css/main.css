@@ -974,38 +974,6 @@ body {
   height: 4rem;
 }
 
-.skills__icon--1 {
-  fill: #1877f2;
-}
-
-.skills__icon--2 {
-  fill: #ba265d;
-}
-
-.skills__icon--3 {
-  fill: #fcb040;
-}
-
-.skills__icon--4 {
-  fill: #09ad09;
-}
-
-.skills__icon--5 {
-  fill: #374059;
-}
-
-.skills__icon--6 {
-  fill: #764c29;
-}
-
-.skills__icon--7 {
-  fill: #f495c8;
-}
-
-.skills__icon--8 {
-  fill: #777;
-}
-
 .skills__name {
   font-size: 3rem;
   color: #333;
