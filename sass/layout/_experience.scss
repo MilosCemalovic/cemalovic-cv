@@ -5,6 +5,7 @@
   grid-template-columns: repeat(2, 1fr);
   gap: 5rem;
   align-items: start;
+  border-bottom: solid 1px $color-primary;
 
   @media only screen and (max-width: $bp-6) {
     grid-template-columns: 1fr;

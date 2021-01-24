@@ -237,7 +237,7 @@ body {
 }
 
 .heading-1 {
-  font-size: 2rem;
+  font-size: 1.4rem;
   color: #666;
 }
 
@@ -269,7 +269,7 @@ body {
 
 .heading-4 {
   line-height: 1;
-  font-size: 2.5rem;
+  font-size: 2rem;
   letter-spacing: 0.2rem;
   color: #666;
   font-weight: 900;
@@ -282,42 +282,28 @@ body {
   }
 }
 
-.heading-4--about, .heading-4--footer {
-  color: #f9f9f9;
-}
-
-.heading-4--footer {
-  justify-self: center;
-  text-align: center;
-}
-
-@media only screen and (max-width: 51.5em) {
-  .heading-4--footer {
-    margin-bottom: 5rem;
-  }
-}
-
 .heading-5 {
   line-height: 1.4;
   letter-spacing: 0.1rem;
   text-align: center;
+  font-size: 1.4rem;
 }
 
 .heading-5--about {
   font-size: 2rem;
-  color: #74d9ff;
+  color: #fe4335;
   text-transform: unset;
-  grid-column: 2 / 3;
-  margin-left: -2rem;
+  justify-self: start;
+  margin-left: 2rem;
 }
 
 .par {
   line-height: 1.4;
   letter-spacing: 0.2rem;
-  font-size: 1.6rem;
+  font-size: 1.2rem;
   color: #666;
   grid-column: 1 / -1;
-  text-align: justify;
+  text-align: center;
 }
 
 .mt-sm {
@@ -332,6 +318,18 @@ body {
   margin-top: 5rem;
 }
 
+.pt-sm {
+  padding-top: 1rem;
+}
+
+.pt-md {
+  padding-top: 2rem;
+}
+
+.pt-lg {
+  padding-top: 5rem;
+}
+
 .mb-sm {
   margin-bottom: 1rem;
 }
@@ -342,6 +340,18 @@ body {
 
 .mb-lg {
   margin-bottom: 5rem;
+}
+
+.pb-sm {
+  padding-bottom: 1rem;
+}
+
+.pb-md {
+  padding-bottom: 2rem;
+}
+
+.pb-lg {
+  padding-bottom: 5rem;
 }
 
 .mtb-lg {
@@ -356,6 +366,18 @@ body {
   margin: 1rem 0;
 }
 
+.ptb-lg {
+  padding: 5rem 0;
+}
+
+.ptb-md {
+  padding: 2rem 0;
+}
+
+.ptb-sm {
+  padding: 1rem 0;
+}
+
 .mlr-lg {
   margin: 0 5rem;
 }
@@ -366,6 +388,18 @@ body {
 
 .mlr-sm {
   margin: 0 1rem;
+}
+
+.plr-lg {
+  padding: 0 5rem;
+}
+
+.plr-md {
+  padding: 0 2rem;
+}
+
+.plr-sm {
+  padding: 0 1rem;
 }
 
 .m-lg {
@@ -380,8 +414,24 @@ body {
   margin: 1rem;
 }
 
+.p-lg {
+  padding: 5rem;
+}
+
+.p-md {
+  padding: 2rem;
+}
+
+.p-sm {
+  padding: 1rem;
+}
+
 .mtlr-lg {
   margin: 5rem 5rem 0 5rem;
+}
+
+.ptlr-lg {
+  padding: 5rem 5rem 0 5rem;
 }
 
 .btn, .btn:link, .btn:visited {
@@ -394,7 +444,6 @@ body {
   width: 20rem;
   text-align: center;
   transition: all 0.5s;
-  border-radius: 1rem;
   position: relative;
 }
 
@@ -417,7 +466,6 @@ body {
   width: 100%;
   height: 100%;
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3);
-  border-radius: 1rem;
   opacity: 0;
   transition: all 0.5s;
   z-index: -1;
@@ -434,16 +482,17 @@ body {
 }
 
 .btn--read {
-  background-color: #74d9ff;
+  background-color: #fe4335;
 }
 
 .btn--cv {
   margin-right: 2rem;
-  background-color: #fcb040;
+  background-color: transparent;
   display: grid;
   grid-template-columns: min-content max-content;
   align-items: center;
   justify-content: space-around;
+  border: 1px solid #fff;
 }
 
 .btn__icon {
@@ -543,13 +592,12 @@ body {
 
 .about {
   grid-column: center-start / center-end;
-  padding: 2rem;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 5rem;
   align-items: start;
-  background-color: #fcb040;
   margin: 5rem 0;
+  border-top: 1px solid #333;
 }
 
 @media only screen and (max-width: 51.5em) {
@@ -564,17 +612,8 @@ body {
   grid-template-rows: repeat(2, min-content);
   row-gap: 2rem;
   justify-items: center;
-  align-items: start;
-  background-color: #f9f9f9;
+  align-items: center;
   color: #fff;
-  padding: 5rem 2rem;
-  height: 30rem;
-}
-
-@media only screen and (max-width: 58.75em) {
-  .about__box {
-    height: 37rem;
-  }
 }
 
 @media only screen and (max-width: 51.5em) {
@@ -587,17 +626,10 @@ body {
   width: 4rem;
   height: 4rem;
   padding: .7rem;
-  background-color: #fcb040;
+  background-color: #fe4335;
   border-radius: 50%;
   fill: #f9f9f9;
   grid-row: 1 / 2;
-  transform: translateY(-4rem);
-}
-
-@media only screen and (max-width: 51.5em) {
-  .about__icon {
-    transform: translateY(-1rem);
-  }
 }
 
 .bg-video {
@@ -618,6 +650,7 @@ body {
   grid-template-columns: repeat(2, 1fr);
   gap: 5rem;
   align-items: start;
+  border-bottom: solid 1px #777;
 }
 
 @media only screen and (max-width: 40em) {
@@ -647,18 +680,24 @@ body {
   }
 }
 
+.projects__link {
+  grid-column: 1 / -1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: #999;
+  font-size: 2rem;
+}
+
 .projects__img {
   display: block;
   width: 100%;
 }
 
-.projects__link-img--php {
-  grid-column: 1 / -1;
-}
-
 .footer {
   grid-column: full-start / full-end;
-  background-color: #999;
+  background-color: #333;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, min-content);
@@ -681,18 +720,51 @@ body {
 @media only screen and (max-width: 51.5em) {
   .footer__text {
     display: block;
+    font-size: .9rem;
+  }
+}
+
+.footer__link {
+  text-decoration: none;
+  justify-self: center;
+  grid-column: 1 / -1;
+  line-height: 1;
+}
+
+.footer__link .span {
+  color: #f9f9f9;
+  font-size: 2.5rem;
+  text-align: center;
+  letter-spacing: 0.2rem;
+  font-weight: 900;
+}
+
+.footer__link .span__contact {
+  text-transform: uppercase;
+  color: #fe4335;
+}
+
+@media only screen and (max-width: 51.5em) {
+  .footer__link .span {
+    font-size: 2rem;
+  }
+}
+
+@media only screen and (max-width: 51.5em) {
+  .footer__link {
+    margin-bottom: 5rem;
   }
 }
 
 .header {
   grid-column: full-start / full-end;
-  background-image: linear-gradient(to right, rgba(249, 249, 249, 0.5), rgba(249, 249, 249, 0.5)), url(../img/cemalovic-milos-protfolio-img-2.jpg);
+  background-image: linear-gradient(to right, rgba(102, 102, 102, 0.7), rgba(102, 102, 102, 0.7)), url(../img/cemalovic-milos-protfolio-img-2.jpg);
   background-size: cover;
-  background-position: bottom;
+  background-position: right;
   display: grid;
   grid-template-rows: repeat(2, min-content);
   justify-items: start;
-  padding: 10vh;
+  padding: 6vh;
   align-content: center;
   row-gap: 20rem;
 }
@@ -720,12 +792,13 @@ body {
   grid-column: center-start / center-end;
   display: grid;
   grid-template-rows: repeat(2, min-content);
-  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
   gap: 5rem;
 }
 
 @media only screen and (max-width: 40em) {
   .hobbies {
+    grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
   }
 }
@@ -739,9 +812,9 @@ body {
 }
 
 .hobbies__icon {
-  width: 10rem;
-  height: 10rem;
-  fill: #fcb040;
+  width: 5rem;
+  height: 5rem;
+  fill: #333;
 }
 
 @media only screen and (max-width: 51.5em) {
@@ -762,7 +835,7 @@ body {
   font-size: 1.4rem;
   text-transform: uppercase;
   font-weight: 700;
-  color: #1877f2;
+  color: #777;
 }
 
 @media only screen and (max-width: 40em) {
@@ -778,8 +851,7 @@ body {
   display: grid;
   grid-template-rows: min-content 1fr min-content;
   align-items: start;
-  justify-items: center;
-  padding: 5vh;
+  padding: 10vh;
 }
 
 @media only screen and (max-width: 51.5em) {
@@ -820,8 +892,8 @@ body {
 
 .navigation-box__img {
   display: block;
-  width: 15rem;
-  height: 15rem;
+  width: 11rem;
+  height: 11rem;
   background-image: url(../img/cemalovic-milos-protfolio-img-1.jpg);
   background-size: cover;
   border-radius: 50%;
@@ -847,6 +919,7 @@ body {
   display: grid;
   justify-items: start;
   row-gap: 1.5rem;
+  column-gap: 2rem;
   position: sticky;
   top: 20rem;
   animation: moveInLeft-2 2s 1s;
@@ -856,7 +929,7 @@ body {
 @media only screen and (max-width: 51.5em) {
   .nav {
     grid-template-columns: repeat(6, min-content);
-    column-gap: 2rem;
+    column-gap: 1rem;
     top: 0;
     margin: 0;
     animation: moveInTop 2s 1s;
@@ -878,7 +951,7 @@ body {
   color: inherit;
   text-decoration: none;
   text-transform: uppercase;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
 }
 
 .nav__link:link::after, .nav__link:visited::after {
@@ -899,14 +972,14 @@ body {
   transform: scaleX(1);
 }
 
-@media only screen and (max-width: 40em) {
+@media only screen and (max-width: 51.5em) {
   .nav__link:link, .nav__link:visited {
     font-size: 1.2rem;
   }
 }
 
 .nav__link:hover {
-  color: #999;
+  color: #fe4335;
 }
 
 .details {
@@ -928,9 +1001,11 @@ body {
 }
 
 .objective {
-  grid-column: center-start / center-end;
+  grid-column: full-start / full-end;
+  padding: 5rem;
   display: grid;
   gap: 2rem;
+  border-top: solid 1px #777;
 }
 
 .skills {
@@ -980,12 +1055,11 @@ body {
 }
 
 .top {
-  grid-column: full-start / full-end;
+  grid-column: center-start / center-end;
   background-color: #f9f9f9;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 2rem;
 }
 
 @media only screen and (max-width: 51.5em) {

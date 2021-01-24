@@ -2,10 +2,11 @@
   grid-column: center-start / center-end;
   display: grid;
   grid-template-rows: repeat(2, min-content);
-  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
   gap: 5rem;
 
   @media only screen and (max-width: $bp-6) {
+    grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
   }
 
@@ -18,9 +19,9 @@
   }
 
   &__icon {
-    width: 10rem;
-    height: 10rem;
-    fill: $color-orange-light;
+    width: 5rem;
+    height: 5rem;
+    fill: $color-grey-dark-2;
 
     @media only screen and (max-width: $bp-5) {
       width: 7rem;
@@ -37,7 +38,7 @@
     font-size: $fz-1;
     text-transform: uppercase;
     font-weight: $fw-7;
-    color: $color-secondary;
+    color: $color-primary;
 
     @media only screen and (max-width: $bp-6) {
       font-size: 1.2rem;

@@ -1,12 +1,12 @@
 .header {
   grid-column: full-start / full-end;
-  background-image: linear-gradient(to right, rgba($color-grey-light-1, .5), rgba($color-grey-light-1, .5)), url(../img/cemalovic-milos-protfolio-img-2.jpg);
+  background-image: linear-gradient(to right, rgba($color-grey-dark-1, .7), rgba($color-grey-dark-1, .7)), url(../img/cemalovic-milos-protfolio-img-2.jpg);
   background-size: cover;
-  background-position: bottom;
+  background-position: right;
   display: grid;
   grid-template-rows: repeat(2, min-content);
   justify-items: start;
-  padding: 10vh;
+  padding: 6vh;
   align-content: center;
   row-gap: 20rem;
 
