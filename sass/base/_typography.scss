@@ -17,7 +17,7 @@
 
 }
 
-.heading-3 {
+.heading-2 {
   @extend %heading;
 
   color: $color-white;
@@ -41,7 +41,7 @@
   }
 }
 
-.heading-4 {
+.heading-3 {
   @extend %heading;
   line-height: $lh-1;
   font-size: $fz-3;

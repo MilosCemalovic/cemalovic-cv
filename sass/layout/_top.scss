@@ -1,5 +1,6 @@
 .top {
-  grid-column: center-start / center-end;
+  grid-column: full-start / full-end;
+  padding: 0 3.5rem;
   background-color: $color-grey-light-1;
   @include flex-nav-1;
 

@@ -230,7 +230,7 @@ body {
   color: #f9f9f9;
 }
 
-.heading-1, .heading-3, .heading-4, .heading-5 {
+.heading-1, .heading-2, .heading-3, .heading-5 {
   font-family: "Poppins", sans-serif;
   text-transform: uppercase;
   letter-spacing: 0.5rem;
@@ -246,28 +246,28 @@ body {
   text-decoration: none;
 }
 
-.heading-3 {
+.heading-2 {
   color: #fff;
   animation: moveInRight 2s;
   display: grid;
   text-transform: unset;
 }
 
-.heading-3-span--1 {
+.heading-2-span--1 {
   font-size: 6rem;
 }
 
-.heading-3-span--2 {
+.heading-2-span--2 {
   font-size: 3rem;
 }
 
 @media only screen and (max-width: 51.5em) {
-  .heading-3-span--2 {
+  .heading-2-span--2 {
     font-size: 2rem;
   }
 }
 
-.heading-4 {
+.heading-3 {
   line-height: 1;
   font-size: 2rem;
   letter-spacing: 0.2rem;
@@ -277,7 +277,7 @@ body {
 }
 
 @media only screen and (max-width: 40em) {
-  .heading-4 {
+  .heading-3 {
     justify-self: center;
   }
 }
@@ -773,7 +773,7 @@ body {
   .header {
     text-align: center;
     justify-items: center;
-    row-gap: 30rem;
+    row-gap: 6rem;
   }
 }
 
@@ -936,10 +936,6 @@ body {
   color: #666;
 }
 
-.nav__item h2 {
-  color: inherit;
-}
-
 .nav__link:link, .nav__link:visited {
   display: grid;
   align-items: center;
@@ -1054,7 +1050,8 @@ body {
 }
 
 .top {
-  grid-column: center-start / center-end;
+  grid-column: full-start / full-end;
+  padding: 0 3.5rem;
   background-color: #f9f9f9;
   display: flex;
   align-items: center;
