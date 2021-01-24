@@ -868,11 +868,6 @@ body {
     z-index: 2000;
     top: 0;
     box-shadow: 0 0.7rem 1.1rem rgba(0, 0, 0, 0.1);
-  }
-}
-
-@media only screen and (max-width: 40em) {
-  .navigation-box {
     padding: 2rem;
   }
 }
@@ -992,6 +987,10 @@ body {
   text-align: center;
   font-size: 1.2rem;
   color: #666;
+}
+
+.details__text span {
+  display: block;
 }
 
 @media only screen and (max-width: 51.5em) {

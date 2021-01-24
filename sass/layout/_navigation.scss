@@ -19,10 +19,7 @@
     position: sticky;
     z-index: 2000;
     top: 0;
-    box-shadow: $bxsw-1;
-  }
-
-  @media only screen and (max-width: $bp-6) {    
+    box-shadow: $bxsw-1; 
     padding: 2rem;
   }
 
@@ -113,6 +110,10 @@
     text-align: center;
     font-size: 1.2rem;
     color: $color-grey-dark-1;
+
+    span {
+      display: block;
+    }
   }
 
   @media only screen and (max-width:$bp-5) {
