@@ -19,7 +19,7 @@
     position: sticky;
     z-index: 2000;
     top: 0;
-    box-shadow: $bxsw-1; 
+    box-shadow: $bxsw-1;
     padding: 2rem;
   }
 
@@ -35,16 +35,16 @@
     display: block;
     width: 11rem;
     height: 11rem;
-    background-image: url(../img/cemalovic-milos-protfolio-img-1.jpg);
+    background-image: url(../img/cemalovic-milos-protfolio-img-1.jpeg);
     background-size: cover;
     border-radius: 50%;
 
-    @media only screen and (max-width:$bp-5) {
+    @media only screen and (max-width: $bp-5) {
       width: 5rem;
       height: 5rem;
     }
 
-    @media only screen and (max-width:$bp-6) {
+    @media only screen and (max-width: $bp-6) {
       width: 3.5rem;
       height: 3.5rem;
     }
@@ -112,7 +112,7 @@
     }
   }
 
-  @media only screen and (max-width:$bp-5) {
+  @media only screen and (max-width: $bp-5) {
     display: none;
   }
 }
