@@ -548,7 +548,7 @@ body {
 
 .social {
   display: grid;
-  grid-template-columns: repeat(5, min-content);
+  grid-template-columns: repeat(3, min-content);
   column-gap: 1rem;
 }
 
@@ -567,12 +567,16 @@ body {
   height: 2rem;
 }
 
+.social__icon--1 {
+  border-radius: 50%;
+}
+
 .social__cv {
   background-color: #000;
   text-decoration: none;
   border-radius: 50%;
   color: #fff;
-  font-size: .9rem;
+  font-size: 0.9rem;
   display: grid;
   align-items: center;
   justify-content: center;
