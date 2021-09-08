@@ -4,7 +4,7 @@
   background-color: $color-grey-light-1;
   @include flex-nav-1;
 
-  @media only screen and (max-width:$bp-5) {
+  @media only screen and (max-width: $bp-5) {
     display: none;
   }
 }
