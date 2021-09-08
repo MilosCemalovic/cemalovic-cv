@@ -1,7 +1,6 @@
 .social {
-
   display: grid;
-  grid-template-columns: repeat(5, min-content);
+  grid-template-columns: repeat(3, min-content);
   column-gap: 1rem;
 
   &__link {
@@ -15,12 +14,18 @@
     height: 2rem;
   }
 
+  &__icon {
+    &--1 {
+      border-radius: 50%;
+    }
+  }
+
   &__cv {
     background-color: $color-black;
     text-decoration: none;
     border-radius: 50%;
     color: $color-white;
-    font-size: .9rem;
+    font-size: 0.9rem;
     @include grid-center-1;
     font-weight: $fw-9;
   }
@@ -29,7 +34,7 @@
     justify-content: end;
     display: none;
 
-    @media only screen and (max-width:$bp-5) {
+    @media only screen and (max-width: $bp-5) {
       display: grid;
     }
   }
