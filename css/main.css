@@ -27,7 +27,7 @@
     transform: translateX(300%);
   }
   80% {
-    transform: translateX(-10%);
+    transform: translateX(-2.5%);
   }
   100% {
     transform: translateX(0);
