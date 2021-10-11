@@ -234,6 +234,7 @@ body {
   font-family: "Poppins", sans-serif;
   text-transform: uppercase;
   letter-spacing: 0.5rem;
+  text-align: center;
 }
 
 .heading-1 {
@@ -600,8 +601,6 @@ body {
   grid-template-columns: repeat(2, 1fr);
   gap: 5rem;
   align-items: start;
-  margin: 5rem 0;
-  border-top: 1px solid #333;
 }
 
 @media only screen and (max-width: 51.5em) {
@@ -764,7 +763,6 @@ body {
   grid-column: full-start / full-end;
   background-image: linear-gradient(to right, rgba(102, 102, 102, 0.7), rgba(102, 102, 102, 0.7)), url(../img/cemalovic-milos-protfolio-img-2.jpg);
   background-size: cover;
-  background-position: right;
   display: grid;
   grid-template-rows: repeat(2, min-content);
   justify-items: start;
