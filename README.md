@@ -2,7 +2,6 @@
 This is my Portfolio Website. It contains:
 
 - SASS
-- Advance CSS
 - CSS Grid
 - CSS Flexbox
 - HTML5
