@@ -1042,7 +1042,7 @@ body {
   margin-left: 5vw;
 }
 
-@media only screen and (max-width: 51.5em) {
+@media only screen and (max-width: 40em) {
   .skills__box {
     margin-left: 20%;
   }
@@ -1056,6 +1056,12 @@ body {
 .skills__name {
   font-size: 3rem;
   color: #fe4335;
+}
+
+@media only screen and (max-width: 40em) {
+  .skills__name {
+    font-size: 2.5rem;
+  }
 }
 
 .top {

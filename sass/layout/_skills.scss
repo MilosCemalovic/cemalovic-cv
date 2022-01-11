@@ -5,7 +5,7 @@
   &__wrapper {
 
     position:relative; 
-    background-image: linear-gradient(to right, rgba($color-white, .8),  rgba($color-white, .8)), url(../img/cemalovic-milos-protfolio-skills.gif);
+    background-image: linear-gradient(to right, rgba($color-white, .7),  rgba($color-white, .7)), url(../img/cemalovic-milos-protfolio-skills.gif);
     background-size: cover;
     background-position: center;
     display: grid;
@@ -27,8 +27,7 @@
     gap: 3rem;
     margin-left: 5vw;
 
-
-    @media only screen and (max-width: $bp-5) {
+    @media only screen and (max-width: $bp-6) {
       margin-left: 20%;
     }
   }
@@ -41,5 +40,9 @@
   &__name {
     font-size: 3rem;
     color: $color-red;
+
+    @media only screen and (max-width: $bp-6) {
+      font-size: 2.5rem;
+    }
   }
 }
