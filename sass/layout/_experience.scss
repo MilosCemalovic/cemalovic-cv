@@ -17,6 +17,10 @@
     grid-template-rows: repeat(2, min-content);
     gap: 2rem;
     justify-items: center;
+
+    a {
+      color: inherit;
+    }
   }
 
 }

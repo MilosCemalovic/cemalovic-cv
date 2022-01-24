@@ -198,6 +198,7 @@
 html {
   font-size: 62.5%;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 @media only screen and (max-width: 75em) {
@@ -305,6 +306,10 @@ body {
   color: #666;
   grid-column: 1 / -1;
   text-align: center;
+}
+
+.par-objective {
+  text-align: justify;
 }
 
 .mt-sm {
@@ -668,6 +673,10 @@ body {
   grid-template-rows: repeat(2, min-content);
   gap: 2rem;
   justify-items: center;
+}
+
+.experience__box a {
+  color: inherit;
 }
 
 .projects {
