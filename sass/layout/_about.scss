@@ -1,22 +1,22 @@
 .about {
-  grid-column: center-start / center-end;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 5rem;  
   align-items: start;
+  display: grid;
+  gap: 5rem;
+  grid-column: center-start / center-end;
+  grid-template-columns: repeat(2, 1fr);
 
   @media only screen and (max-width: $bp-5) {
     grid-template-columns: 1fr;
   }
 
   &__box {
+    align-items: center;
+    color: $color-white;
     display: grid;
     grid-template-columns: min-content 1fr;
     grid-template-rows: repeat(2, min-content);
-    row-gap: 2rem;
     justify-items: center;
-    align-items: center;
-    color: $color-white;
+    row-gap: 2rem;
 
     @media only screen and (max-width: $bp-5) {
       height: max-content;
@@ -24,13 +24,12 @@
   }
 
   &__icon {
-    width: 4rem;
-    height: 4rem;
-    padding: .7rem;
     background-color: $color-red;
     border-radius: 50%;
     fill: $color-grey-light-1;
     grid-row: 1 / 2;
+    height: 4rem;
+    padding: 0.7rem;
+    width: 4rem;
   }
-
 }

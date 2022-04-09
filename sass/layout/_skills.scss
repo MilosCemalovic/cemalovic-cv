@@ -1,30 +1,31 @@
 .skills {
-  grid-column: full-start / full-end;
   display: grid;
+  grid-column: full-start / full-end;
 
   &__wrapper {
-
-    position:relative; 
-    background-image: linear-gradient(to right, rgba($color-white, .7),  rgba($color-white, .7)), url(../img/cemalovic-milos-protfolio-skills.gif);
-    background-size: cover;
-    background-position: center;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-  
     align-items: start;
+    background-image: linear-gradient(
+        to right,
+        rgba($color-white, 0.7),
+        rgba($color-white, 0.7)
+      ),
+      url(../img/cemalovic-milos-protfolio-skills.gif);
+    background-position: center;
+    background-size: cover;
+    display: grid;
     gap: 3rem;
-    padding: 5rem 0;
+    grid-template-columns: repeat(2, 1fr);
+    position: relative;
 
     @media only screen and (max-width: $bp-6) {
       grid-template-columns: 1fr;
     }
-  
   }
 
   &__box {
     display: grid;
-    grid-template-columns: min-content max-content;
     gap: 3rem;
+    grid-template-columns: min-content max-content;
     margin-left: 5vw;
 
     @media only screen and (max-width: $bp-6) {
@@ -33,13 +34,13 @@
   }
 
   &__icon {
-    width: 4rem;
     height: 4rem;
+    width: 4rem;
   }
 
   &__name {
-    font-size: 3rem;
     color: $color-red;
+    font-size: 3rem;
 
     @media only screen and (max-width: $bp-6) {
       font-size: 2.5rem;

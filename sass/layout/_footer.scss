@@ -1,51 +1,50 @@
 .footer {
-  grid-column: full-start / full-end;
-  background-color: $color-grey-dark-2;  
+  background-color: $color-grey-dark-2;
   display: grid;
+  grid-column: full-start / full-end;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, min-content);
   justify-content: space-between;
-  padding: 5rem;
 
-  @media only screen and (max-width:$bp-5) {
+  @media only screen and (max-width: $bp-5) {
     padding: 5rem 2rem;
   }
 
   &__text {
-    font-size: $fz-2;
     color: $color-grey-light-1;
     display: none;
+    font-size: $fz-2;
 
-    @media only screen and (max-width:$bp-5) {
+    @media only screen and (max-width: $bp-5) {
       display: block;
-      font-size: .9rem;
+      font-size: 0.9rem;
     }
   }
 
-  &__link { 
-    text-decoration: none; 
-    justify-self: center;
+  &__link {
     grid-column: 1 / -1;
+    justify-self: center;
     line-height: $lh-1;
+    text-decoration: none;
 
-    .span {      
+    .span {
       color: $color-grey-light-1;
       font-size: 2.5rem;
-      text-align: center;
-      letter-spacing: $ls-2;
       font-weight: $fw-9;
+      letter-spacing: $ls-2;
+      text-align: center;
 
       &__contact {
-        text-transform: uppercase;
         color: $color-red;
+        text-transform: uppercase;
       }
 
-      @media only screen and (max-width:$bp-5) {
+      @media only screen and (max-width: $bp-5) {
         font-size: $fz-3;
       }
     }
 
-    @media only screen and (max-width:$bp-5) {
+    @media only screen and (max-width: $bp-5) {
       margin-bottom: 5rem;
     }
   }

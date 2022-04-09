@@ -6,6 +6,7 @@ This is my Portfolio Website. It contains:
 - CSS Grid
 - CSS Flexbox
 - HTML5 (nav, header, span, section, button, svg [use xlink:href], footer)
+- SEO (image name, alt text)
 - BEM Architecture (Block, Element, Modifier)
 - DRY Methodology (Don't Repeat Yourslef)
 - Clean & Reusable code

@@ -2,19 +2,19 @@
   &,
   &:link,
   &:visited {
-    text-transform: uppercase;
-    color: $color-white;
-    font-weight: $fw-4;
-    font-family: $font-secondary;
-    text-decoration: none;
-    padding: 1.5rem 2.5rem;
-    width: 20rem;
-    text-align: center;
     -webkit-transition: $transition-2;
-    transition: $transition-2;
+    color: $color-white;
+    font-family: $font-secondary;
+    font-weight: $fw-4;
+    padding: 1.5rem 2.5rem;
     position: relative;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: $transition-2;
+    width: 20rem;
 
-    @media only screen and (max-width:$bp-5) {
+    @media only screen and (max-width: $bp-5) {
       padding: 1.1rem 1.8rem;
     }
   }
@@ -24,17 +24,17 @@
   }
 
   &::after {
-    content: "";
+    content: '';
+    -webkit-transition: $transition-2;
+    box-shadow: $bxsw-2;
     display: block;
+    height: 100%;
+    left: 0;
+    opacity: 0;
     position: absolute;
     top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    box-shadow: $bxsw-2;
-    opacity: 0;
-    -webkit-transition: $transition-2;
     transition: $transition-2;
+    width: 100%;
     z-index: -1;
   }
 
@@ -44,9 +44,9 @@
 
   &:focus::after,
   &:active::after {
-    transform: scale(1);
     box-shadow: none;
     outline: none;
+    transform: scale(1);
   }
 
   &--read {
@@ -54,18 +54,17 @@
   }
 
   &--cv {
-    margin-right: 2rem;
+    align-items: center;
     background-color: transparent;
+    border: 1px solid $color-white;
     display: grid;
     grid-template-columns: min-content max-content;
-    align-items: center;
     justify-content: space-around;
-    border: 1px solid $color-white;
   }
 
   &__icon {
-    width: 2rem;
-    height: 2rem;
     fill: $color-white;
+    height: 2rem;
+    width: 2rem;
   }
 }

@@ -1,17 +1,17 @@
 .social {
+  column-gap: 1rem;
   display: grid;
   grid-template-columns: repeat(3, min-content);
-  column-gap: 1rem;
 
   &__link {
-    display: flex;
     @include hover-active-1;
+    display: flex;
   }
 
   &__icon,
   &__cv {
-    width: 2rem;
     height: 2rem;
+    width: 2rem;
   }
 
   &__icon {
@@ -21,18 +21,18 @@
   }
 
   &__cv {
+    @include grid-center-1;
     background-color: $color-red;
-    text-decoration: none;
     border-radius: 50%;
     color: $color-white;
     font-size: 0.9rem;
-    @include grid-center-1;
     font-weight: $fw-9;
+    text-decoration: none;
   }
 
   &__footer {
-    justify-content: end;
     display: none;
+    justify-content: end;
 
     @media only screen and (max-width: $bp-5) {
       display: grid;

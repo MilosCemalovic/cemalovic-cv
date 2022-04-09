@@ -190,14 +190,14 @@
 *,
 *::before,
 *::after {
-  padding: 0;
-  margin: 0;
   box-sizing: inherit;
+  margin: 0;
+  padding: 0;
 }
 
 html {
-  font-size: 62.5%;
   box-sizing: border-box;
+  font-size: 62.5%;
   scroll-behavior: smooth;
 }
 
@@ -208,14 +208,14 @@ html {
 }
 
 body {
-  font-family: "Lato", sans-serif;
-  font-weight: 400;
   color: #777;
-  font-size: 1.4rem;
-  line-height: 1.4;
   display: grid;
-  grid-template-rows: 4rem calc(100vh - 4rem) repeat(7, min-content);
+  font-family: "Lato", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 400;
   grid-template-columns: [nav-start] 30rem [nav-end full-start] minmax(5rem, 1fr) [center-start] repeat(4, [col-start] minmax(min-content, 30rem) [col-end]) [center-end] minmax(5rem, 1fr) [full-end];
+  grid-template-rows: 4rem calc(100vh - 4rem) repeat(7, min-content);
+  line-height: 1.4;
   overflow-x: hidden;
 }
 
@@ -233,14 +233,14 @@ body {
 
 .heading-1, .heading-2, .heading-3, .heading-5 {
   font-family: "Poppins", sans-serif;
-  text-transform: uppercase;
   letter-spacing: 0.5rem;
   text-align: center;
+  text-transform: uppercase;
 }
 
 .heading-1 {
-  font-size: 1.4rem;
   color: #666;
+  font-size: 1.4rem;
 }
 
 .heading-1__link:link, .heading-1__link:visited {
@@ -249,8 +249,8 @@ body {
 }
 
 .heading-2 {
-  color: #fff;
   animation: moveInRight 2s;
+  color: #fff;
   display: grid;
   text-transform: unset;
 }
@@ -270,12 +270,12 @@ body {
 }
 
 .heading-3 {
-  line-height: 1;
-  font-size: 2rem;
-  letter-spacing: 0.2rem;
   color: #666;
+  font-size: 2rem;
   font-weight: 900;
   grid-column: 1 / -1;
+  letter-spacing: 0.2rem;
+  line-height: 1;
 }
 
 @media only screen and (max-width: 40em) {
@@ -285,26 +285,29 @@ body {
 }
 
 .heading-5 {
-  line-height: 1.4;
-  letter-spacing: 0.1rem;
-  text-align: center;
   font-size: 1.4rem;
+  letter-spacing: 0.1rem;
+  line-height: 1.4;
+  text-align: center;
 }
 
 .heading-5--about {
-  font-size: 2rem;
   color: #fe4335;
-  text-transform: unset;
+  font-size: 2rem;
   justify-self: start;
-  margin-left: 2rem;
+  text-transform: unset;
+}
+
+.heading-5--experience {
+  margin-left: -6rem;
 }
 
 .par {
-  line-height: 1.4;
-  letter-spacing: 0.2rem;
-  font-size: 1.2rem;
   color: #666;
+  font-size: 1.2rem;
   grid-column: 1 / -1;
+  letter-spacing: 0.2rem;
+  line-height: 1.4;
   text-align: center;
 }
 
@@ -384,6 +387,10 @@ body {
   padding: 1rem 0;
 }
 
+.mr-md {
+  margin-right: 2rem;
+}
+
 .mlr-lg {
   margin: 0 5rem;
 }
@@ -441,16 +448,17 @@ body {
 }
 
 .btn, .btn:link, .btn:visited {
-  text-transform: uppercase;
+  -webkit-transition: all 0.5s;
   color: #fff;
-  font-weight: 400;
   font-family: "Poppins", sans-serif;
-  text-decoration: none;
+  font-weight: 400;
   padding: 1.5rem 2.5rem;
-  width: 20rem;
-  text-align: center;
-  transition: all 0.5s;
   position: relative;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: all 0.5s;
+  width: 20rem;
 }
 
 @media only screen and (max-width: 51.5em) {
@@ -464,16 +472,17 @@ body {
 }
 
 .btn::after {
-  content: "";
+  content: '';
+  -webkit-transition: all 0.5s;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3);
   display: block;
+  height: 100%;
+  left: 0;
+  opacity: 0;
   position: absolute;
   top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3);
-  opacity: 0;
   transition: all 0.5s;
+  width: 100%;
   z-index: -1;
 }
 
@@ -482,9 +491,9 @@ body {
 }
 
 .btn:focus::after, .btn:active::after {
-  transform: scale(1);
   box-shadow: none;
   outline: none;
+  transform: scale(1);
 }
 
 .btn--read {
@@ -492,19 +501,18 @@ body {
 }
 
 .btn--cv {
-  margin-right: 2rem;
+  align-items: center;
   background-color: transparent;
+  border: 1px solid #fff;
   display: grid;
   grid-template-columns: min-content max-content;
-  align-items: center;
   justify-content: space-around;
-  border: 1px solid #fff;
 }
 
 .btn__icon {
-  width: 2rem;
-  height: 2rem;
   fill: #fff;
+  height: 2rem;
+  width: 2rem;
 }
 
 .btn-hamburger {
@@ -653,7 +661,6 @@ body {
 
 .experience {
   grid-column: full-start / full-end;
-  padding: 5rem;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 5rem;
@@ -714,7 +721,6 @@ body {
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, min-content);
   justify-content: space-between;
-  padding: 5rem;
 }
 
 @media only screen and (max-width: 51.5em) {
@@ -732,7 +738,7 @@ body {
 @media only screen and (max-width: 51.5em) {
   .footer__text {
     display: block;
-    font-size: .9rem;
+    font-size: 0.9rem;
   }
 }
 
@@ -927,7 +933,6 @@ body {
 }
 
 .nav {
-  margin-top: 5rem;
   list-style: none;
   display: grid;
   justify-items: start;
@@ -1015,7 +1020,6 @@ body {
 
 .objective {
   grid-column: full-start / full-end;
-  padding: 5rem;
   display: grid;
   gap: 2rem;
   border-top: solid 1px #777;
@@ -1035,7 +1039,6 @@ body {
   grid-template-columns: repeat(2, 1fr);
   align-items: start;
   gap: 3rem;
-  padding: 5rem 0;
 }
 
 @media only screen and (max-width: 40em) {

@@ -1,25 +1,30 @@
 .header {
-  grid-column: full-start / full-end;
-  background-image: linear-gradient(to right, rgba($color-grey-dark-1, .7), rgba($color-grey-dark-1, .7)), url(../img/cemalovic-milos-protfolio-img-2.jpg);
+  align-content: center;
+  background-image: linear-gradient(
+      to right,
+      rgba($color-grey-dark-1, 0.7),
+      rgba($color-grey-dark-1, 0.7)
+    ),
+    url(../img/cemalovic-milos-protfolio-img-2.jpg);
   background-size: cover;
   display: grid;
+  grid-column: full-start / full-end;
   grid-template-rows: repeat(2, min-content);
   justify-items: start;
   padding: 6vh;
-  align-content: center;
   row-gap: 20rem;
 
-  @media only screen and (max-width:$bp-5) {
-    text-align: center;
+  @media only screen and (max-width: $bp-5) {
     justify-items: center;
     row-gap: 6rem;
+    text-align: center;
   }
 }
 
 .btn-box {
   display: flex;
 
-  @media only screen and (max-width:$bp-6) {
+  @media only screen and (max-width: $bp-6) {
     display: grid;
     grid-gap: 2rem;
   }

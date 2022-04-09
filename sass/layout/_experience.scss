@@ -1,11 +1,10 @@
 .experience {
-  grid-column: full-start / full-end;
-  padding: 5rem;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 5rem;
   align-items: start;
   border-bottom: solid 1px $color-primary;
+  display: grid;
+  gap: 5rem;
+  grid-column: full-start / full-end;
+  grid-template-columns: repeat(2, 1fr);
 
   @media only screen and (max-width: $bp-6) {
     grid-template-columns: 1fr;
@@ -13,14 +12,13 @@
 
   &__box {
     display: grid;
+    gap: 2rem;
     grid-template-columns: min-content 1fr;
     grid-template-rows: repeat(2, min-content);
-    gap: 2rem;
     justify-items: center;
 
     a {
       color: inherit;
     }
   }
-
 }

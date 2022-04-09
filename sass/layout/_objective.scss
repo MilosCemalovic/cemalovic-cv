@@ -1,7 +1,6 @@
 .objective {
-  grid-column: full-start / full-end;
-  padding: 5rem;
+  border-top: solid 1px $color-primary;
   display: grid;
   gap: 2rem;
-  border-top: solid 1px $color-primary;
+  grid-column: full-start / full-end;
 }
