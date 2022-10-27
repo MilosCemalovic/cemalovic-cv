@@ -1,4 +1,5 @@
 # cemalovic-cv
+
 This is my Portfolio Website. It contains:
 
 - SASS (variables, nesting, mixins, extends)
@@ -12,7 +13,8 @@ This is my Portfolio Website. It contains:
 - Clean & Reusable code
 - SVG / sprite.svg
 
-Links to my projects in:
+Links to my private business and to projects in:
+
 - Angular
 - Web Design
 - PHP
