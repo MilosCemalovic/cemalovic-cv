@@ -808,12 +808,13 @@ body {
   transform: translateY(-0.2rem);
 }
 .navigation-box__img {
-  background-image: url(../img/cemalovic-milos-protfolio-img-1.jpeg);
+  background-image: url(../img/cemalovic-milos-protfolio-img-1.jpg);
   background-size: cover;
   border-radius: 50%;
   display: block;
   height: 11rem;
   width: 11rem;
+  background-position: right 35% bottom 45%;
 }
 @media only screen and (max-width: 51.5em) {
   .navigation-box__img {
