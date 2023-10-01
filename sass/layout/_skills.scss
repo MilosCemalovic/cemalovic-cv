@@ -6,8 +6,8 @@
     align-items: start;
     background-image: linear-gradient(
         to right,
-        rgba($color-white, 0.7),
-        rgba($color-white, 0.7)
+        rgba($color-white, 0.2),
+        rgba($color-white, 0.5)
       ),
       url(../img/cemalovic-milos-protfolio-skills.gif);
     background-position: center;
@@ -39,7 +39,7 @@
   }
 
   &__name {
-    color: $color-red;
+    color: $color-white;
     font-size: 3rem;
 
     @media only screen and (max-width: $bp-6) {

@@ -599,17 +599,6 @@ body {
   width: 4rem;
 }
 
-.bg-video {
-  height: 100%;
-  left: 0;
-  opacity: 0.75;
-  overflow: hidden;
-  position: absolute;
-  top: 0;
-  width: 100%;
-  z-index: -1;
-}
-
 .experience {
   align-items: start;
   border-bottom: solid 1px #777;
@@ -943,7 +932,7 @@ body {
 }
 .skills__wrapper {
   align-items: start;
-  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(../img/cemalovic-milos-protfolio-skills.gif);
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.5)), url(../img/cemalovic-milos-protfolio-skills.gif);
   background-position: center;
   background-size: cover;
   display: grid;
@@ -972,7 +961,7 @@ body {
   width: 4rem;
 }
 .skills__name {
-  color: #fe4335;
+  color: #fff;
   font-size: 3rem;
 }
 @media only screen and (max-width: 40em) {
