@@ -836,13 +836,18 @@ body {
     animation-fill-mode: backwards;
     animation: moveInTop 2s 1s;
     column-gap: 1rem;
-    grid-template-columns: repeat(6, min-content);
+    grid-template-columns: repeat(5, min-content);
     margin: 0;
     top: 0;
   }
 }
 .nav__item {
   color: #666;
+}
+@media only screen and (max-width: 51.5em) {
+  .nav__item--home {
+    display: none;
+  }
 }
 .nav__link:link, .nav__link:visited {
   align-items: center;

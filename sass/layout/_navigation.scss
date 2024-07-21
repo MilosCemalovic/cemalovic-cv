@@ -67,13 +67,19 @@
     animation-fill-mode: backwards;
     animation: moveInTop 2s 1s;
     column-gap: 1rem;
-    grid-template-columns: repeat(6, min-content);
+    grid-template-columns: repeat(5, min-content);
     margin: 0;
     top: 0;
   }
 
   &__item {
     color: $color-grey-dark-1;
+
+    @media only screen and (max-width: $bp-5) {
+      &--home {
+        display: none;
+      }
+    }
   }
 
   &__link:link,
