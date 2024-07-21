@@ -80,6 +80,10 @@
   line-height: $lh-2;
   text-align: center;
 
+  &--about {
+    text-align: left;
+  }
+
   &-objective {
     text-align: justify;
   }
