@@ -25,6 +25,11 @@
     justify-self: center;
     line-height: $lh-1;
     text-decoration: none;
+    transition: $transition-1;
+
+    &:hover {
+      animation: pulsate 1s infinite;
+    }
 
     .span {
       color: $color-grey-light-1;

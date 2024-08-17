@@ -654,6 +654,10 @@ body {
   justify-self: center;
   line-height: 1;
   text-decoration: none;
+  transition: all 0.2s;
+}
+.footer__link:hover {
+  animation: pulsate 1s infinite;
 }
 .footer__link .span {
   color: #f9f9f9;
