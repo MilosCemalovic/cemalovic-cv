@@ -16,5 +16,6 @@ This is my Portfolio Website. It contains:
 Links to my private business and to projects in:
 
 - Angular
+- React
 - Web Design
 - PHP
