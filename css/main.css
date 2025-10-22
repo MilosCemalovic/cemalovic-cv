@@ -593,13 +593,13 @@ body {
   }
 }
 .about__icon {
-  background-color: #fe4335;
-  border-radius: 50%;
-  fill: #f9f9f9;
   grid-row: 1/2;
-  height: 4rem;
   padding: 0.7rem;
-  width: 4rem;
+}
+.about__icon-img, .about__icon-svg {
+  border-radius: 50%;
+  height: 5rem;
+  width: 5rem;
 }
 
 .experience {
