@@ -24,12 +24,14 @@
   }
 
   &__icon {
-    background-color: $color-red;
-    border-radius: 50%;
-    fill: $color-grey-light-1;
     grid-row: 1 / 2;
-    height: 4rem;
     padding: 0.7rem;
-    width: 4rem;
+
+    &-img,
+    &-svg {
+      border-radius: 50%;
+      height: 5rem;
+      width: 5rem;
+    }
   }
 }
