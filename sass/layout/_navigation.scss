@@ -1,0 +1,123 @@
+.navigation-box {
+  align-items: start;
+  background-color: $color-grey-light-1;
+  display: grid;
+  grid-column: nav-start / nav-end;
+  grid-row: 1 / -1;
+  grid-template-rows: min-content 1fr min-content;
+  padding: 10vh;
+
+  @media only screen and (max-width: $bp-5) {
+    align-content: center;
+    align-items: center;
+    box-shadow: $bxsw-1;
+    grid-column: full-start / full-end;
+    grid-row: 1 / 2;
+    grid-template-columns: min-content max-content;
+    grid-template-rows: min-content;
+    height: 7rem;
+    justify-content: space-between;
+    padding: 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 2000;
+  }
+
+  &__link {
+    @include hover-active-1;
+    animation: moveInLeft-2 2s;
+    position: sticky;
+    top: 1.5rem;
+    z-index: 2000;
+  }
+
+  &__img {
+    background-image: url(../img/cemalovic-milos-protfolio-img-1.jpg);
+    background-size: cover;
+    border-radius: 50%;
+    display: block;
+    height: 11rem;
+    width: 11rem;
+    background-position: right 35% bottom 45%;
+
+    @media only screen and (max-width: $bp-5) {
+      height: 5rem;
+      width: 5rem;
+    }
+
+    @media only screen and (max-width: $bp-6) {
+      height: 3.5rem;
+      width: 3.5rem;
+    }
+  }
+}
+
+.nav {
+  animation-fill-mode: backwards;
+  animation: moveInLeft-2 2s 1s;
+  column-gap: 2rem;
+  display: grid;
+  justify-items: start;
+  list-style: none;
+  position: sticky;
+  row-gap: 1.5rem;
+  top: 20rem;
+
+  @media only screen and (max-width: $bp-5) {
+    animation-fill-mode: backwards;
+    animation: moveInTop 2s 1s;
+    column-gap: 1rem;
+    grid-template-columns: repeat(5, min-content);
+    margin: 0;
+    top: 0;
+  }
+
+  &__item {
+    color: $color-grey-dark-1;
+
+    @media only screen and (max-width: $bp-5) {
+      &--home {
+        display: none;
+      }
+    }
+  }
+
+  &__link:link,
+  &__link:visited {
+    @include link-hover-under-line;
+    align-items: center;
+    color: inherit;
+    display: grid;
+    font-size: $fz-1;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    @media only screen and (max-width: $bp-5) {
+      font-size: 1.2rem;
+    }
+  }
+
+  &__link:hover {
+    color: $color-red;
+  }
+}
+
+.details {
+  display: grid;
+  justify-items: center;
+  row-gap: 2rem;
+
+  &__text {
+    color: $color-grey-dark-1;
+    font-size: 1.2rem;
+    text-align: center;
+
+    span {
+      display: block;
+    }
+  }
+
+  @media only screen and (max-width: $bp-5) {
+    display: none;
+  }
+}

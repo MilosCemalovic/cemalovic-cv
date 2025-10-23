@@ -1,0 +1,52 @@
+.hobbies {
+  display: grid;
+  gap: 5rem;
+  grid-column: center-start / center-end;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  grid-template-rows: repeat(2, min-content);
+
+  @media only screen and (min-width: $bp-1) {
+    gap: 2rem;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media only screen and (max-width: $bp-6) {
+    gap: 2rem;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  &-box {
+    align-items: center;
+    column-gap: 2rem;
+    display: grid;
+    grid-template-columns: min-content max-content;
+    justify-self: center;
+  }
+
+  &__icon {
+    fill: $color-grey-dark-2;
+    height: 5rem;
+    width: 5rem;
+
+    @media only screen and (max-width: $bp-5) {
+      height: 7rem;
+      width: 7rem;
+    }
+
+    @media only screen and (max-width: $bp-6) {
+      height: 5rem;
+      width: 5rem;
+    }
+  }
+
+  &__text {
+    color: $color-primary;
+    font-size: $fz-1;
+    font-weight: $fw-7;
+    text-transform: uppercase;
+
+    @media only screen and (max-width: $bp-6) {
+      font-size: 1.2rem;
+    }
+  }
+}

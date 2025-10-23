@@ -1,0 +1,36 @@
+.from-right,
+.from-up,
+.from-down,
+.from-left {
+  opacity: 0;
+}
+
+.from-left.appear {
+  animation-fill-mode: backwards;
+  animation: moveInLeft-2 1.5s;
+  opacity: 1;
+
+  @media only screen and (max-width: $bp-5) {
+    animation: none;
+  }
+}
+
+.from-right.appear {
+  animation: moveInRight 2s;
+  opacity: 1;
+}
+
+.from-up.appear {
+  animation: moveInTop 2s;
+  opacity: 1;
+}
+
+.from-down.appear {
+  animation: moveInBottom 1s;
+  animation-fill-mode: backwards;
+  opacity: 1;
+
+  @media only screen and (max-width: $bp-5) {
+    animation: none;
+  }
+}

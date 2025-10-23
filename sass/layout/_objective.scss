@@ -1,0 +1,6 @@
+.objective {
+  border-top: solid 1px $color-primary;
+  display: grid;
+  gap: 2rem;
+  grid-column: full-start / full-end;
+}

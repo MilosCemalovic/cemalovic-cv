@@ -1,0 +1,55 @@
+.footer {
+  background-color: $color-grey-dark-2;
+  display: grid;
+  grid-column: full-start / full-end;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, min-content);
+  justify-content: space-between;
+
+  @media only screen and (max-width: $bp-5) {
+    padding: 5rem 2rem;
+  }
+
+  &__text {
+    color: $color-grey-light-1;
+    display: none;
+    font-size: $fz-2;
+
+    @media only screen and (max-width: $bp-5) {
+      display: block;
+    }
+  }
+
+  &__link {
+    grid-column: 1 / -1;
+    justify-self: center;
+    line-height: $lh-1;
+    text-decoration: none;
+    transition: $transition-1;
+
+    &:hover {
+      animation: pulsate 1s infinite;
+    }
+
+    .span {
+      color: $color-grey-light-1;
+      font-size: 2.5rem;
+      font-weight: $fw-9;
+      letter-spacing: $ls-2;
+      text-align: center;
+
+      &__contact {
+        color: $color-red;
+        text-transform: uppercase;
+      }
+
+      @media only screen and (max-width: $bp-5) {
+        font-size: $fz-3;
+      }
+    }
+
+    @media only screen and (max-width: $bp-5) {
+      margin-bottom: 5rem;
+    }
+  }
+}

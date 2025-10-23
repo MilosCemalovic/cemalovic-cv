@@ -1,0 +1,10 @@
+.top {
+  @include flex-nav-1;
+  background-color: $color-grey-light-1;
+  grid-column: full-start / full-end;
+  padding: 0 3.5rem;
+
+  @media only screen and (max-width: $bp-5) {
+    display: none;
+  }
+}

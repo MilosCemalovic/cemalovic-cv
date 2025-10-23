@@ -1,0 +1,79 @@
+// COLORS
+
+$color-primary: #777;
+
+$color-white: #fff;
+$color-black: #000;
+
+$color-grey-light-1: #f9f9f9;
+$color-grey-light-2: #999;
+$color-grey-dark-1: #666;
+$color-grey-dark-2: #333;
+
+$color-red: #fe4335;
+
+$color-green-light: #02d002;
+$color-green-dark: #09ad09;
+
+// FONT FAMILIES
+
+$font-primary: 'Lato', sans-serif;
+$font-secondary: 'Poppins', sans-serif;
+
+// FONT SIZES
+
+$fz-1: 1.4rem;
+$fz-2: 1.2rem;
+$fz-3: 2rem;
+
+// FONT WEIGHTS
+
+$fw-1: 100;
+$fw-3: 300;
+$fw-4: 400;
+$fw-5: 500;
+$fw-6: 600;
+$fw-7: 700;
+$fw-9: 900;
+
+// LINE HEIGHTS
+
+$lh-1: 1;
+$lh-2: 1.4;
+$lh-3: 1.7;
+
+// LETTER SPACINGS
+
+$ls-1: .1rem;
+$ls-2: .2rem;
+$ls-3: .5rem;
+
+// TEXT SHADOWS
+
+$txsw-1: .2rem .2rem .2rem $color-black;
+$txsw-2: .2rem .2rem .2rem $color-white;
+$txsw-3: 0 .1rem .15rem $color-grey-dark-1;
+
+// BOX SHADOWS
+
+//bxsw:X-osa Y-osa blur rgba(boja, opacity);
+$bxsw-1: 0 .7rem 1.1rem rgba($color-black, .1);
+$bxsw-2: 0 1rem 2rem rgba($color-black, .3);
+$bxsw-3: 0 .5rem 1rem rgba($color-black, .2);
+$bxsw-4: 0 3rem 6rem rgba($color-black, .1);
+$bxsw-5: 0 1rem 1rem 1rem rgba($color-black, .3);
+
+// TRANSITIONS
+
+$transition-1: all .2s;
+$transition-2: all .5s;
+
+// BREAKPOINTS
+
+$bp-1: 82.5em; // 1320px
+$bp-2: 75em; // 1200px
+$bp-3: 58.75em; // 940px
+$bp-4: 51.75em; // 828px
+$bp-5: 51.5em; // 824px
+$bp-6: 40em; // 640px
+$bp-7: 30.25em; // 484px

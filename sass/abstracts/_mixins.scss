@@ -1,0 +1,41 @@
+@mixin grid-center-1 {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin flex-nav-1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@mixin hover-active-1 {
+  cursor: pointer;
+  transition: $transition-1;
+
+  &:hover,
+  &:active {
+    transform: translateY(-0.2rem);
+  }
+}
+
+@mixin link-hover-under-line {
+  &::after {
+    content: '';
+    background-color: currentColor;
+    display: block;
+    height: 0.12rem;
+    margin-top: -0.2rem;
+    opacity: 0;
+    transform: scaleX(0);
+    transition: all 0.25s ease;
+    width: 0;
+  }
+
+  &:hover::after {
+    opacity: 1;
+    transform: scaleX(1);
+    width: 100%;
+  }
+}

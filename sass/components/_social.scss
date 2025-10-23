@@ -1,0 +1,41 @@
+.social {
+  column-gap: 1rem;
+  display: grid;
+  grid-template-columns: repeat(3, min-content);
+
+  &__link {
+    @include hover-active-1;
+    display: flex;
+  }
+
+  &__icon,
+  &__cv {
+    height: 2rem;
+    width: 2rem;
+  }
+
+  &__icon {
+    &--1 {
+      border-radius: 50%;
+    }
+  }
+
+  &__cv {
+    @include grid-center-1;
+    background-color: $color-red;
+    border-radius: 50%;
+    color: $color-white;
+    font-size: 0.9rem;
+    font-weight: $fw-9;
+    text-decoration: none;
+  }
+
+  &__footer {
+    display: none;
+    justify-content: end;
+
+    @media only screen and (max-width: $bp-5) {
+      display: grid;
+    }
+  }
+}
