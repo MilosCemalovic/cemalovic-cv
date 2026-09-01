@@ -533,10 +533,12 @@ body {
 .social__link {
   cursor: pointer;
   transition: all 0.2s;
-  display: flex;
 }
 .social__link:hover, .social__link:active {
   transform: translateY(-0.2rem);
+}
+.social__link {
+  display: flex;
 }
 .social__icon, .social__cv {
   height: 2rem;
@@ -683,7 +685,7 @@ body {
 
 .header {
   align-content: center;
-  background-image: linear-gradient(to right, rgba(102, 102, 102, 0.7), rgba(102, 102, 102, 0.7)), url(../img/cemalovic-milos-protfolio-img-2.jpg);
+  background-image: linear-gradient(to right, rgba(102, 102, 102, 0.7), rgba(102, 102, 102, 0.7)), url(../img/cemalovic-milos-portfolio-img-2.jpg);
   background-size: cover;
   display: grid;
   grid-column: full-start/full-end;
@@ -794,16 +796,18 @@ body {
 .navigation-box__link {
   cursor: pointer;
   transition: all 0.2s;
+}
+.navigation-box__link:hover, .navigation-box__link:active {
+  transform: translateY(-0.2rem);
+}
+.navigation-box__link {
   animation: moveInLeft-2 2s;
   position: sticky;
   top: 1.5rem;
   z-index: 2000;
 }
-.navigation-box__link:hover, .navigation-box__link:active {
-  transform: translateY(-0.2rem);
-}
 .navigation-box__img {
-  background-image: url(../img/cemalovic-milos-protfolio-img-1.jpg);
+  background-image: url(../img/cemalovic-milos-portfolio-img-1.jpg);
   background-size: cover;
   border-radius: 50%;
   display: block;
@@ -853,14 +857,6 @@ body {
     display: none;
   }
 }
-.nav__link:link, .nav__link:visited {
-  align-items: center;
-  color: inherit;
-  display: grid;
-  font-size: 1.4rem;
-  text-decoration: none;
-  text-transform: uppercase;
-}
 .nav__link:link::after, .nav__link:visited::after {
   content: "";
   background-color: currentColor;
@@ -876,6 +872,14 @@ body {
   opacity: 1;
   transform: scaleX(1);
   width: 100%;
+}
+.nav__link:link, .nav__link:visited {
+  align-items: center;
+  color: inherit;
+  display: grid;
+  font-size: 1.4rem;
+  text-decoration: none;
+  text-transform: uppercase;
 }
 @media only screen and (max-width: 51.5em) {
   .nav__link:link, .nav__link:visited {
@@ -943,7 +947,7 @@ body {
 }
 .skills__wrapper {
   align-items: start;
-  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.5)), url(../img/cemalovic-milos-protfolio-skills.gif);
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.5)), url(../img/cemalovic-milos-portfolio-skills.gif);
   background-position: center;
   background-size: cover;
   display: grid;
