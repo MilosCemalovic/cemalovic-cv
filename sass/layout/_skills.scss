@@ -4,12 +4,13 @@
 
   &__wrapper {
     align-items: start;
-    background-image: linear-gradient(
+    background-image:
+      linear-gradient(
         to right,
         rgba($color-white, 0.2),
         rgba($color-white, 0.5)
       ),
-      url(../img/cemalovic-milos-protfolio-skills.gif);
+      url(../img/cemalovic-milos-portfolio-skills.gif);
     background-position: center;
     background-size: cover;
     display: grid;
